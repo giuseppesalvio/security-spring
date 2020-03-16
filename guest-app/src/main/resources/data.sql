@@ -1,0 +1,2 @@
+INSERT INTO USER (USERNAME, PASSWORD) VALUES ('salvio', 'password');
+INSERT INTO USER (USERNAME, PASSWORD) VALUES ('giuseppe', 'foobar');
