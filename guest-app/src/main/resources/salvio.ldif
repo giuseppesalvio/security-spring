@@ -1,0 +1,51 @@
+dn: dc=giuseppesalvio,dc=com
+objectclass: top
+objectclass: domain
+objectclass: extensibleObject
+dc: giuseppesalvio
+o: GiuseppeSalvio
+
+dn: ou=people,dc=giuseppesalvio,dc=com
+objectclass: top
+objectClass: organizationalUnit
+ou: people
+
+dn: ou=groups,dc=giuseppesalvio,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: groups
+
+dn: uid=gsalvio,ou=people,dc=giuseppesalvio,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Giuseppe Salvio
+sn: Salvio
+givenName: Giuseppe
+mail: gsalvio@giuseppesalvio.com
+uid: gsalvio
+userPassword: {SHA}W6ph5Mm5Pz8GgiULbPgzG37mj9g=
+
+dn: uid=gesposito,ou=people,dc=giuseppesalvio,dc=com
+objectClass: inetOrgPerson
+cn: Gennaro Esposito
+sn: Esposito
+givenName: Gennaro
+mail: Gennaro@esposito.com
+uid: gesposito
+userPassword: {SHA}iEPX+SQWIR3p67lj/0zigSWTKHg=
+
+dn: cn=admin,ou=groups,dc=giuseppesalvio,dc=com
+objectclass: top
+objectclass: groupOfUniqueNames
+cn: admins
+uniqueMember: uid=gsalvio,ou=people,dc=giuseppesalvio,dc=com
+
+dn: cn=user,ou=groups,dc=giuseppesalvio,dc=com
+objectclass: top
+objectclass: groupOfUniqueNames
+cn: users
+uniqueMember: uid=gsalvio,ou=people,dc=giuseppesalvio,dc=com
+uniqueMember: uid=gesposito,ou=people,dc=giuseppesalvio,dc=com
+
