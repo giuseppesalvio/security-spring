@@ -1,0 +1,3 @@
+# Project exclude paths
+/guest-app/target/
+/guest-services/target/
