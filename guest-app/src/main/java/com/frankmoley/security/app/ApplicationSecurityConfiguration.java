@@ -44,7 +44,7 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
                 .groupSearchBase("ou=groups")
                 .authoritiesMapper(authoritiesMapper())
                 .contextSource()
-                .url("ldap://localhost:8389/dc=giuseppesalvio,dc=com")
+                .url("ldap://localhost:8389/dc=frankmoley,dc=com")
                 .and()
                 .passwordCompare()
                 .passwordEncoder(new LdapShaPasswordEncoder())
